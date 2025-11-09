@@ -169,13 +169,33 @@ footer {
 }
 .activity-participants ul {
   margin: 0;
-  padding-left: 1.15rem;
+  padding-left: 0;
   color: #334155;
+  list-style: none; /* hide bullet points */
 }
 .activity-participants li {
   margin: 6px 0;
   line-height: 1.4;
-  list-style-type: disc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Delete button next to each participant */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c53030;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background-color 0.15s, color 0.15s;
+}
+.delete-btn:hover {
+  background-color: rgba(197, 63, 63, 0.08);
+  color: #9b2c2c;
 }
 
 /* Empty state */

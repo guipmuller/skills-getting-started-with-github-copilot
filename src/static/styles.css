@@ -63,6 +63,8 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  /* leve sombra para destaque */
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
 }
 
 .activity-card h4 {
@@ -141,4 +143,44 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants section */
+.activity-participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #e6eef8;
+}
+.activity-participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: #1a237e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity-participants h5 .count {
+  font-size: 0.85rem;
+  color: #475569;
+  background: #eef2ff;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid #e0e7ff;
+}
+.activity-participants ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: #334155;
+}
+.activity-participants li {
+  margin: 6px 0;
+  line-height: 1.4;
+  list-style-type: disc;
+}
+
+/* Empty state */
+.activity-participants .empty {
+  color: #6b7280;
+  font-style: italic;
+  padding: 6px 0;
 }
